@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="NAME" content="GARIMA PRASHER">
+<meta name="STUDENT NUMBER" content="301093329">
+<meta name="FILE DESCRIPTION" content="MENU SCREEN IKEA">
+<link rel="stylesheet" href="style.css" />
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:799px) {
+  /* For mobile phones: */
+  img#garimalogo {
+  display: none;
+}
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+}
+}
+@media only screen and (max-width:800px-1300px) {
+  
+  /* For tablets: */
+   .menu, .main, .right{
+    width:100%;
+  }
+  
+}
+</style>
+
+<body style="background-color:lemonchiffon;">
+<h1 style="text-align:center;padding:15px;"> IKEA STORE </h1>
+<h2 style="text-align:center;padding:15px;"> FULFILLING YOUR DESIRES IS OUR AIM!</h2>
+<p style="color:blue;"> <i> IKEA store is an European Multinational group that designs and sells ready to assemble the furniture, kitchen appliances and home accessories. It is a hub of the Furniture House that was found in Sweden. Customers can explore the products and have a wide range of choices to choose from.</i> </p>
+<img id="garimalogo" src="ikeaa.jpg" alt="Ikea" width="1000" height="500">
+<h3 style="text-align:center;padding:15px;"> IKEA STORE PRODUCTS </h3>
+
+<div class="row">
+  <div class="column">
+    <img src="ikea_bed.jpg"  alt="BEDS" width="300px" height="300px" onclick="window.open('bed.html', '_self');">
+    <h3 style="text-align: center;">Beds (150$-500$)</h3>
+  </div>
+  <div class="column">
+    <img src="chair.jpg" alt="CHAIRS" width="300px" height="300px" onclick="window.open('chair.html', '_self');">
+    <h3 style="text-align: center;">Chairs (100$-250$)</h3>
+  </div>
+  <div class="column">
+    <img src="shoerack.jpg" alt="SHOE-RACK" width="300px" height="300px" onclick="window.open('shoerack.html', '_self');">
+    <h3 style="text-align: center;">Shoe-rack (80$-110$)</h3>
+  </div>
+  <div class="column">
+    <img src="hugosofa.jpg" alt="Couch" width="300px" height="300px" onclick="window.open('Sofa.html', '_self');">
+    <h3 style="text-align: center;">Couch (550$-1300$)</h3>
+  </div>
+  <div class="column">
+    <img src="woodentable.jpg" alt="Wooden table" width="300px" height="300px" onclick="window.open('tables.html', '_self');">
+    <h3 style="text-align: center;">Tables (80$-200$)</h3>
+  </div>
+</div>
+</body>
+</html>

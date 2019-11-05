@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="NAME" content="GARIMA PRASHER">
+<meta name="STUDENT NUMBER" content="30109332">
+<meta name="FILE DESCRIPTION" content="DETAILS SCREEN:sofa.html">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+@media only screen and (max-width:799px) {
+  /* For mobile phones: */
+  img.hidden {
+  display: none;
+}
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+}
+}
+@media only screen and (max-width:800px-1300px) {
+  
+  /* For tablets: */
+   .menu, .main, .right{
+    width:100%;
+  }
+  
+}
+</style>
+</head>
+<body style="background-color:bisque;">
+<h1 style="text-align:center;padding:15px;"> SOFA </h1>
+<p style="color:blue;"> Take the time to just sit back and relax on a lounge sofa.It is one of life's simple pleasures. We make soft, cozy sofas and armchairs you can sink right into and are avilable in different variations as 2-seater, Corner sofa and Hugo sofa.</p>
+<div class="row">
+  <div class="column">
+    <img src="hugosofa.jpg"  alt="Hugo Sofa" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;"> Hugo-Sofa 550$ </h3>
+  </div>
+  <div class="column">
+    <img src="2seater.jpeg" alt="2 Seater" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;"> 2 Seater 570$</h3>
+  </div>
+  <div class="column">
+    <img src="cornersofa.jpg" alt="Corner Sofa" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;">  Corner Sofa 800$</h3>
+  </div>
+</div>
+<a href="confirm.html"</a>
+  <button> NEXT </button>
+  <a href="ikea.html" </a>
+  <button> BACK </button>
+</body>
+</html>

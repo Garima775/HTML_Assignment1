@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="NAME" content="GARIMA PRASHER">
+<meta name="STUDENT NUMBER" content="30109332">
+<meta name="FILE DESCRIPTION" content="DETAILS SCREEN:bed.html">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+@media only screen and (max-width:799px) {
+  /* For mobile phones: */
+  img.hidden {
+  display: none;
+}
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+}
+}
+@media only screen and (max-width:800px-1300px) {
+  
+  /* For tablets: */
+   .menu, .main, .right{
+    width:100%;
+  }
+  
+}
+</style>
+</head>
+<body style="background-color:bisque;">
+<h1 style="text-align:center;padding:15px;"> BEDS </h1>
+<p style="color:blue;"> Beds are available in different sizes such as FULL, QUEEN SIZE, KING SIZE and also for KIDS.The most relaxing place in your home starts with a comfy bed and bedroom furniture that looks great and organizes all of your things. Whether you need to unwind from a busy day, or need extra space on the bed for the kids (and the family dog). IKEA has a great selection of beds, mattresses, cozy blankets and dressers. You will love our selection, and our prices will have you in dreamland in no time! </p>
+<div class="row">
+  <div class="column">
+    <img src="ikea_bed.jpg"  alt="BEDS" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;"> Full-Size bed 150$ </h3>
+  </div>
+  <div class="column">
+    <img src="queen.jpg" alt="Queen" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;"> Queen-Size Bed 250$</h3>
+  </div>
+  <div class="column">
+    <img src="king.jpg" alt="King" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;">  King-Size Bed 270$</h3>
+  </div>
+  <div class="column">
+    <img src="ikea_kid.jpg" alt="Kids" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;"> kids-Bed 100$</h3>
+  </div>
+</div>
+<a href="confirm.html"</a>
+  <button> NEXT </button>
+  <a href="ikea.html" </a>
+  <button> BACK </button>
+</body>
+</html>

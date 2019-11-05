@@ -1,0 +1,191 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-fluid {
+    max-height: 100px;
+}
+
+.img1-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.btn-outline-success {
+    color: #ed3e27;
+    border-color: #eb1111;
+}
+
+.logogap {
+    padding-right: 10%;
+}
+
+.navspace {
+    padding-left: 30px;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+    display: flex;
+}
+
+.name-container {
+    display: flex;
+    margin-left: -20px;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.name-container {
+    flex: 1;
+}
+
+.logo {
+    font-weight: 400;
+    margin: 5px;
+    font-size: 40px;
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    color: #5f5f79;
+    font-size: 18px;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+}
+
+.cart {
+    justify-content: flex-end;
+    flex: 1;
+    text-decoration: none;
+    list-style: none;
+}
+
+.zoom {
+    transition: transform 1s;
+}
+
+.zoom:hover {
+    transform: scale(1.15);
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    min-height: 80vh;
+}
+
+.macbook img {
+    height: 25vh;
+}
+
+.dell img {
+    height: 28vh;
+}
+
+.align text {
+    align-content: center;
+}
+
+.cta {
+    padding: 0px 0px 0px 0px;
+}
+
+.asus {
+    padding: 0px 0px 0px 230px;
+}
+
+.products {
+    margin: 50px;
+    margin-left: 0px;
+}
+
+.products img {
+    margin-left: 0px;
+    cursor: pointer;
+    transition: 2s;
+    padding: 10px;
+    width: 100%
+}
+
+.products img:hover {
+    transform: scale(1.1);
+}
+
+.laptop1-bottom .fa {
+    font-size: 10px;
+}
+
+.laptop1-bottom h4 {
+    font-size: 20px;
+}
+
+.laptop1-bottom h5 {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    height: 40px;
+    margin: 10px 10px;
+}
+
+@media only screen and (max-width:980px) {
+    .nav-links {
+        height: 0px;
+    }
+    .nav-links ul {
+        height: 57px;
+        width: 100%
+    }
+    .nav-links ul li {
+        padding: 0px 30px 0px 0px
+    }
+}
+
+
+/*
+@media only screen and(max-width:320px)
+{
+    .disapper{
+        display: none;
+    }
+}
+*/
+
+.credit-card-div span {
+    padding-top: 10px;
+}
+
+.credit-card-div img {
+    padding-top: 30px;
+}
+
+.credit-card-div .small-font {
+    font-size: 9px;
+}
+
+.credit-card-div .pad-adjust {
+    padding-top: 10px;
+}

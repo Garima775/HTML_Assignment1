@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="NAME" content="GARIMA PRASHER">
+<meta name="STUDENT NUMBER" content="30109332">
+<meta name="FILE DESCRIPTION" content="DETAILS SCREEN:shoerack.html">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+@media only screen and (max-width:799px) {
+  /* For mobile phones: */
+  img.hidden {
+  display: none;
+}
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+}
+}
+@media only screen and (max-width:800px-1300px) {
+  
+  /* For tablets: */
+   .menu, .main, .right{
+    width:100%;
+  }
+  
+}
+</style>
+</head>
+<body style="background-color:bisque;">
+<h1 style="text-align:center;padding:15px;"> SHOE-RACK </h1>
+<p style="color:blue;"> Shoe-Racks are available in different sizes with varying price depending on the customer one can choose. Wide shoe rack covers large space as compared to the normal shoerack.</p>
+<div class="row">
+  <div class="column">
+    <img src="Shoerack.jpg"  alt="Normal Shioe size" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;"> Shoerack normal-size 80$ </h3>
+  </div>
+  <div class="column">
+    <img src="shoe1jpg.jpg" alt="wide shoes size" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;">  shoerack Wide 100$</h3>
+  </div>
+</div>
+<p><a href="confirm.html" </a>
+<button> NEXT <button>
+<a href="ikea.html" </a>
+<button> BACK <button>
+</p>
+</body>
+</html>

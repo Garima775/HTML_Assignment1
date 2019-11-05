@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="NAME" content="GARIMA PRASHER">
+<meta name="STUDENT NUMBER" content="301093329">
+<meta name="FILE DESCRIPTION" content="CONFIRM SCREEN:confirm.html">
+<style>
+* {
+  box-sizing: border-box;
+}.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+@media only screen and (max-width:799px) {
+  /* For mobile phones: */
+  img.hidden {
+  display: none;
+}
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+}
+}
+@media only screen and (max-width:800px-1300px) {
+  
+  /* For tablets: */
+   .menu, .main, .right{
+    width:100%;
+  }
+  
+}
+</style>
+</head>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;
+var num=document.myform.num.value;
+var creditnum=document.myform.num.value;
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf("."); 
+var Delivery_Address=document.myform.name.value;
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+}else if (isNaN(num)){
+  document.getElementById("numloc").innerHTML="Enter Numeric value only and minimum 10 digits";
+} else if(num.length<10){
+alert("Enter atleast 10 values");
+  return false;
+}else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+} else if(isNaN(creditnum)){
+document.getElementById("creloc").innerHTML="Enter atleast 16 Numbers only";
+return false;
+} else if (Delivery_Address==null || Delivery_Address==""){  
+  alert("Delivery Address can't be blank");  
+  return false;  
+}  
+}
+</script>  
+<body style="background-color:lightpink;">
+<form name="myform" method="post" 
+action="Modal.html" 
+onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>
+Telephone Number: <input type="text" name="num"><span id="numloc"></span><br/>
+Email: <input type="text" name="email"><br/>
+Credit Card Number:<input type="text" name="creditnum"> <span id="creloc"> </span> </br>
+Delivery Address: <input type="text" name="Delivery_Address"> </br>
+<input type="submit" value="REGISTER">  
+</form>  
+</body>
+</html>
+

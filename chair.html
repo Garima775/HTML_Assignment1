@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="NAME" content="GARIMA PRASHER">
+<meta name="STUDENT NUMBER" content="30109332">
+<meta name="FILE DESCRIPTION" content="DETAILS SCREEN:chair.html">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+@media only screen and (max-width:799px) {
+  /* For mobile phones: */
+  img.hidden {
+  display: none;
+}
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+}
+}
+@media only screen and (max-width:800px-1300px) {
+  
+  /* For tablets: */
+   .menu, .main, .right{
+    width:100%;
+  }
+  
+}
+</style>
+</head>
+
+<body style="background-color:bisque;">
+<h1 style="text-align:center;padding:15px;"> CHAIRS </h1>
+<p style="color:blue;"> Chairs are available in different sizes and are considered as mostly comfortable furniture in the house one can have. Chairs are available in variations as armchair, roating chair with varying price.</p>
+<div class="row">
+  <div class="column">
+    <img src="chair.jpg"  alt="Chair" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;"> Sofa- Chair 150$ </h3>
+  </div>
+  <div class="column">
+    <img src="chair1.jpg" alt="Arm-Chair" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;">  Arm-Chair 100$</h3>
+  </div>
+  <div class="column">
+    <img src="chair2.jpg" alt="Rotating Chair" width="300px" height="300px" onclick="window.open('confirm.html', '_self');">
+    <h3 style="text-align: center;"> Rotating Chair 100$</h3>
+  </div>
+</div>
+<a href="confirm.html" </a>
+  <button> NEXT </button>
+  <a href="ikea.html" </a>
+  <button> BACK </button>
+</body>
+</html>
